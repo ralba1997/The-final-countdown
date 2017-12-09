@@ -121,39 +121,6 @@ class MaxHeap:
 
             self.__bubbleDown(largest)
 
-
-
-
-
-m = MaxHeap([95, 96, 5, 4])
-
-
-
-print(str(m.heap))
-
-
-
-m.insert(22)
-
-m.insert(135)
-
-print(str(m.heap))
-
-print(str(m.getMax()))
-
-print(str(m.heap))
-print(str(m.getMax()))
-
-print(str(m.heap))
-
-print(str(m.delMax()))
-print(str(m.heap))
-print(str(m.delMax()))
-print(str(m.heap))
-print(str(m.delMax()))
-print(str(m.heap))
-print(str(m.delMax()))
-
 def genrandomnumbers(length):  # GENERATE length RANDOM NUMBERS  IN RANGE 1-maxval
     maxval = 1000000
     string = ""
@@ -214,9 +181,9 @@ import matplotlib.patches as mpatches
 if __name__ == '__main__':
     path = os.path.dirname(os.path.realpath(__file__))
     os.chdir(path)
-    if not os.path.exists("Data1"):
-        os.makedirs("Data1")
-    os.chdir(path + "\Data1")
+    if not os.path.exists("Data"):
+        os.makedirs("Data")
+    os.chdir(path + "\Data")
     maxpoweroften = 6
     numberoftests = 5
 
@@ -286,4 +253,4 @@ axes = plt.gca()
 axes.set_ylim([10**(-6), 10**2])
 # plt.ylim(10**-6,1)
 # plt.show()
-fig.savefig("Binary Tree.png")
+fig.savefig("Max Heap.png")
