@@ -28,15 +28,18 @@ def quick_sort(l):
     else:
         pivot=l[0]
         less=[]
+        equal=[]
         greater=[]
         for i in l:
             if i < pivot:
                 less.append(i)
             elif i > pivot:
                 greater.append(i)
+            else:
+                equal.append(i)
 
 
-        return quick_sort(less) + [pivot] + quick_sort(greater)
+        return quick_sort(less) + equal + quick_sort(greater)
 
 
 def merge_sort(l):
