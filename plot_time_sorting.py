@@ -13,12 +13,12 @@ size_1000=rand(1000)
 size_10000=rand(10000)
 size_100000=rand(100000)
 
+# print(size_10)
+# print(size_100)
+# print(size_1000)
+# print(size_10000)
+# print(size_100000)
 
-print(size_10)
-print(size_100)
-print(size_1000)
-print(size_10000)
-print(size_100000)
 
 
 
@@ -74,11 +74,10 @@ def merge_leftright(left, right):
     return result
 
 
-# print(merge_sort(size_10))
-# print(merge_sort(size_100))
-# print(merge_sort(size_1000))
-# print(merge_sort(size_10000))
-# print(merge_sort(size_100000))
+print(merge_sort(size_10))
+print(merge_sort(size_100))
+print(quick_sort(size_1000))
+print(quick_sort(size_10000))
 
 if __name__ == '__main__':
     time_test_merge=[]
